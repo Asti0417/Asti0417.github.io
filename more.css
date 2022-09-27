@@ -1,0 +1,29 @@
+h1{
+    line-height: 200%;
+    text-align: center;
+}
+.textshadow1{
+    color:bisque;
+    background-color: rgb(173, 82, 82);
+    text-shadow: 0 0 20px rgb(195, 179, 179);
+}
+.textshadow2{
+    color: antiquewhite;
+    background-color: rgb(118, 75, 75);
+    text-shadow: 
+        0 1px 0 #cccc,
+        0 2px 0 #cccacc,
+        0 3px 0 #aaaaaa;
+}
+div{
+    width: 500px;
+    height: 500px;
+    font-size: 15pt;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 5px auto; 
+}
+.radial1{
+    background:radial-gradient(closest-side at 70% 50%,yellow,green,orange);
+}

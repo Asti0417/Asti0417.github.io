@@ -1,0 +1,168 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+#universe{
+    /* 放射性漸層效果 */
+    background:radial-gradient(#555,#000) ;
+}
+
+@keyframes starFlash{
+    from{opacity: 1;}
+    to{opacity: 0.3;}
+}
+
+#stars{
+    height: 100%;
+    background-image: url(./images/stars.png);
+    background-size: cover;
+    animation: starFlash 3s infinite alternate;
+}
+
+@keyframes sunLight {
+    from{box-shadow:0 0 45px #f5c91a;}
+    to{box-shadow: 0 0 90px #f5c91a;}
+}
+
+#sun{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(#f5c313,#ec7e08);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 100px;
+    box-shadow: 0 0 45px #f5c91a;
+    animation: sunLight 3s infinite alternate;
+}
+
+@keyframes spin {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+#earthOrbit{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 30s linear infinite;
+}
+
+#earth{
+   position: absolute;
+   margin-top: -40px;
+   margin-left: -40px;
+   left: 50%;
+   animation: spin 30s linear infinite;
+}
+#moonOrbit{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -60px;    
+    top: 0%;
+    left: 50%;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 6s linear infinite;
+}
+#moon{
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(#ddd,#888);
+    border-radius: 100%;
+}
+#waterOrbit{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -405px;
+    margin-left: -130px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 20s linear infinite;
+}
+#goldOrbit{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -430px;
+    margin-left: -155px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 23s linear infinite;
+}
+#fireOrbit{
+    height: 480px;
+    width: 480px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -515px;
+    margin-left: -240px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 24s linear infinite;
+}
+#woodOrbit{
+    height: 580px;
+    width: 580px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -560px;
+    margin-left: -288px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 21s linear infinite;
+}
+#toOrbit{
+    height: 680px;
+    width: 680px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -610px;
+    margin-left: -340px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 26s linear infinite;
+}
+#kingOrbit{
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -630px;
+    margin-left: -340px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 27s linear infinite;
+}
+#seaOrbit{
+    height: 860px;
+    width: 860px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -660px;
+    margin-left: -435px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 25s linear infinite;
+}
+

@@ -1,0 +1,154 @@
+/* 電腦版 */
+@media screen and (min-width:1080px) {
+    #wrapper{
+        width: 100%;
+    }
+    header{
+        background-image: url(./images/bg3.jpg);
+        padding: 30px;
+    }
+    header h1{
+        text-align: center;
+        color: #474c2a;
+    }
+    #content_in{
+        text-align:center;
+        background-color: #cbac9c;
+        border:1px solid #f4f4ed;
+        border-radius: 50px;
+        margin: 10px;
+        padding: 10px;
+        width: 20%;
+        height: 100%;
+        font-size: 24px;
+        float: left;
+        display: block;
+    }
+    #content{
+        display:flex; 
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    #content_in img{
+        width: 100%;
+        border-radius: 50px;
+        border:3px solid #f4f4ed;
+    }
+    #content_in p{
+        font-size: 20px;
+    }
+    footer{
+        clear: both;
+        background-color: #474c2a;
+        text-align: center;
+    }
+    footer p{
+        font-size:10px ;
+        color: #f4f4ed;
+        padding: 10px 0px;
+    }
+}
+/* 平板 */
+@media screen and (min-width:480px) and (max-width:1079px) {
+    #wrapper{
+        width: 100%;
+    }
+    header{
+        background-image: url(./images/bg3.jpg);
+        padding: 30px;
+    }
+    header h1{
+        text-align: center;
+        color: #474c2a;
+    }
+    #content_in{
+        display:flex; 
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+        background-color: #cbac9c;
+        border:1px solid #f4f4ed;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 5px;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+        float: left;
+    }
+    #content{
+        display:flex; 
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    #content_in img{
+        width: 100%;
+        border-radius: 50px;
+        border:3px solid #f4f4ed;
+    }
+    footer{
+        background-color: #474c2a;
+        text-align: center;
+    }
+    footer p{
+        font-size:10px ;
+        color: #f4f4ed;
+        padding: 10px 0px;
+    }
+    
+}
+/* 手機 */
+@media screen and (max-width:479px) {
+    #wrapper{
+        width: 300px;
+        padding: 0;
+        margin: 10px auto;
+    }
+    header{
+        background-image: url(./images/bg3.jpg);
+        padding: 30px;
+    }
+    header h1{
+        text-align: center;
+        color: #474c2a;
+    }
+    #content_in{
+        display:flex; 
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+        background-color: #cbac9c;
+        border:1px solid #f4f4ed;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+        height: 100%;
+        text-align: center;
+    }
+    #content_in img{
+        width: 100%;
+        border-radius: 50px;
+        border:3px solid #f4f4ed;
+    }
+    #content{
+        display:flex; 
+        flex-wrap:wrap;
+        align-items:flex-start;
+        justify-content:center;
+        height: 100%;
+    }
+    footer{
+        clear: both;
+        background-color: #474c2a;
+        text-align: center;
+    }
+    footer p{
+        font-size:10px ;
+        color: #f4f4ed;
+        padding: 10px 0px;
+    }
+}
+
+
