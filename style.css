@@ -1,69 +1,73 @@
 @charset "utf-8";
+
 /* 米字號代表for everybody */
 /* 米字號*/
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     /* 去除邊界對邊框的影響 */
     box-sizing: border-box;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 /*視窗背景色設定*/
-body{
-   background: #a1bdbd url(./images/bg2.png) repeat-x;
-   /* 背景線性漸層 */
-   /* background: linear-gradient(to top,#5f9393,#a1bdbd); */
-    
+body {
+    background: #a1bdbd url(./images/bg2.png) repeat-x;
 }
 
 /*連結顏色設定*/
-a{
+a {
     color: #7e3c19;
 }
-footer a{
-    text-decoration:none;
-}
-h1 a{
-    color:#4a6d6d ;
+
+footer a {
     text-decoration: none;
-    font-family: 'Cormorant SC', serif;
+}
+
+h1 a {
+    color: #4a6d6d;
+    text-decoration: none;
+    font-family: "Cormorant SC", serif;
 }
 
 /*頁首,導覽,頁尾的共通設定*/
-header, nav, footer{
+header,
+nav,
+footer {
     text-align: center;
 }
 
 /*導覽樣式設定*/
-.menu li{
+.menu li {
     display: inline-block;
     width: 150px;
     /* 框架大小 */
-    margin:  10px;
+    margin: 10px;
 }
-.menu li a{
+
+.menu li a {
     background-color: #f6f0ec;
     /* 使無底線 */
-    text-decoration:none;
+    text-decoration: none;
     /* 填滿父層框架 */
-    display:block;
+    display: block;
     padding: 5px;
     border-radius: 50px;
     border: dashed 1.8px #4a6d6d;
-    font-family: 'Noto Serif TC', serif;
+    font-family: "Noto Serif TC", serif;
 }
-#info ul {
-    padding:10px 100px 10px 30px;
+
+#info ol {
+    padding: 10px 100px 10px 30px;
 }
-.maintext{
-    margin:50px 50px;
-    
+
+.maintext {
+    margin: 50px 50px;
 }
 
 /*頁面標題設定*/
 
-h1{
+h1 {
     background-color: #fff;
     color: #4a6d6d;
     width: 230px;
@@ -72,17 +76,17 @@ h1{
     margin-bottom: 23px;
     border: double 6px #4c6969;
     text-align: center;
-    border-radius:50px;
+    border-radius: 50px;
     font-size: 2em;
-    font-family: 'Cormorant SC', serif;
+    font-family: "Cormorant SC", serif;
     /* 文字跟物件陰影 */
-    text-shadow:1px 2px 0 #a1bdbd;
-    box-shadow:8px 8px 0 #809a9a;
+    text-shadow: 1px 2px 0 #a1bdbd;
+    box-shadow: 8px 8px 0 #809a9a;
 }
-              
+
 /*次標題設定*/
-.h{
-    color:#658686;
+.h {
+    color: #658686;
     border: 1px dashed rgb(183, 154, 81);
     /* 只有左邊有外框 */
     border-left: 5px solid #95644b;
@@ -90,32 +94,36 @@ h1{
     padding: 5px;
     margin: 8px 1px;
 }
-#emailtext{
+
+#emailtext {
     color: #f6f0ec;
 }
-h2{
+
+h2 {
     color: #3d5959;
 }
 
 /*小標題設定*/
-.bb{
+.bb {
     color: #f6f0ec;
     padding: 1px;
     margin: 1px auto 3px auto;
 }
-.home a{
-    color: #f6f0ec;
-    background-color: #809a9a ;
+
+.home a {
+    color: #596f6f;
+    background-color: #f6f0ec;
     display: inline-block;
-    padding: 7px;
+    padding: 8px;
     margin: 10px auto 20px auto;
     border-radius: 30px;
-    border: 1.5px solid;
-    font-family: 'Cormorant SC', serif;
+    border: 3px solid #728989;
+    font-family: "Cormorant SC", serif;
+    font-size: 14px;
 }
 
 /*內容區塊邊框設定*/
-#content{
+#content {
     width: 960px;
     background-color: #f6f0ec;
     margin: 30px auto;
@@ -124,66 +132,74 @@ h2{
 }
 
 /*「更多介紹」連結設定 */
-.more{
-    text-align:right;
+.more {
+    text-align: right;
 }
+
 /* 連結中的符號設定 */
-.more::after{
+.more::after {
     content: url(./images/ico_arrow.png);
     margin-left: 5px;
     vertical-align: middle;
 }
+
 /*連結圖示設定: 從a取href中開頭是mailto的，在它後面加icon;
-^開頭，$結尾，*內容有即可。 */
-a[href^="mailto:"]::after{
-    content:url(./images/ico_mail.png);
+    ^開頭，$結尾，*內容有即可。 */
+a[href^="mailto:"]::after {
+    content: url(./images/ico_mail.png);
     margin-left: 5px;
     vertical-align: middle;
 }
 
 /*區塊間分隔*/
-#content> div +div{
+#content>div+div {
     margin-top: 100px;
 }
 
 /*文繞圖設定*/
-.imgL{
+.imgL {
     float: left;
     margin: 20px 50px;
 }
-.imgR{
+
+.imgR {
     float: right;
     margin: 15px 3px;
 }
-.clear{
+
+.clear {
     clear: both;
 }
-.clearfix::after{
+
+.clearfix::after {
     content: "";
     clear: both;
     display: block;
 }
-div dl{
+
+div ol {
     padding: 150px;
 }
-span{
+
+span {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
 }
+
 /*圓形圖片設定*/
-img{
+img {
     border-radius: 40px;
     box-shadow: 7px 5px 0 #90a2a297;
 }
-.imgint{
+
+.imgint {
     border-radius: 50%;
     border: 5px solid #e1ecec97;
 }
 
 /* 表格設定 之 外表格*/
-.entryTable{
+.entryTable {
     width: 100%;
     border: 2px solid #4a6d6d;
     border-collapse: collapse;
@@ -191,53 +207,123 @@ img{
 }
 
 /* 表格標頭 */
-.entryTable caption{
+.entryTable caption {
     font-size: 1em;
     margin-bottom: 5px;
 }
 
 /* 內表格 */
 .entryTable th,
-.entryTable td{
+.entryTable td {
     border: 1px solid #4a6d6d;
     padding: 8px;
 }
-.entryTable th{
-    background-color:#95b5b5b9;
-    text-align:left ;
+
+.entryTable th {
+    background-color: #95b5b5b9;
+    text-align: left;
     width: 10em;
 }
+
 /* 文字欄位設定 */
 .entryTable input[type="text"],
 .entryTable input[type="email"],
-.entryTable textarea{
+.entryTable textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #cccccc;
     font-size: 1em;
 }
 
-th{
+th {
     color: #fff7f2;
 }
+
 /* 按鈕設定 */
-.entryBtn{
+.entryBtn {
     text-align: center;
 }
-.entryBtn input{
+
+.entryBtn input {
     width: 200px;
     padding: 10px;
     font-size: 1em;
     margin: 0 10px;
     border: 3px solid #768e8eb9;
-    border-radius:10px;
+    border-radius: 10px;
     background-color: #fff;
 }
+
 /* 滑過去會換背景色 */
-.entryBtn input:hover{
+.entryBtn input:hover {
     background-color: #95b5b5b9;
 }
+
 /* qm-2的css */
-.grownup{
+.grownup {
     text-align: center;
+}
+
+/* RWD */
+
+/* pc */
+@media screen and (min-width: 1080px) {}
+
+/* pad */
+@media screen and (min-width: 480px) and (max-width: 1079px) {}
+
+/* phone*/
+@media screen and (max-width: 479px) {
+    #content>div+div {
+        margin-top: 40px;
+    }
+    .menu li {
+        display: inline-block;
+        width: 120px;
+        /* 框架大小 */
+        margin: 10px;
+    }
+
+    #content {
+        width: 360px;
+        margin: 20px auto;
+        padding: 40px 60px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imgint {
+        border-radius: 50%;
+        border: 5px solid #e1ecec97;
+    }
+
+    .imgL {
+        clear: both;
+        margin: 20px;
+    }
+
+    .imgR {
+        clear: both;
+        margin: 20px;
+    }
+
+    .h {
+        margin: 0px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .more {
+        text-align: center;
+    }
+    #info ol {
+        padding: 0px 50px 0px 50px;
+        width: 200px;
+    }
+    div ol {
+        padding: 0px;
+    }
 }
